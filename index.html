@@ -1,3 +1,86 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><title>Mauricio Javier Biott</title></head>
-<body><h1>Mauricio Javier Biott</h1><p>Apps para Android: Dojo Mines, Dojo Sudoku, Porotos, LunaCycle y Simple Nimbo.</p></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mauricio Javier Biott · Android apps</title>
+<meta name="description" content="Small, calm apps for Android: Dojo Mines, Dojo Sudoku, Porotos, LunaCycle and Simple Nimbo.">
+<style>
+:root{--bg:#f3f1e8;--fg:#1c2b24;--muted:#5b6b62;--card:#fff;--line:#d8d6c8;--accent:#1f6b52}
+@media(prefers-color-scheme:dark){:root{--bg:#101a16;--fg:#e8efe9;--muted:#9db0a5;--card:#18251f;--line:#2b3b33;--accent:#7fc4a0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 20px 24px}
+header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+h1{margin:0;font:700 2rem/1.2 Georgia,"Noto Serif",serif}
+.tag{margin:6px 0 0;color:var(--muted)}
+label{font-size:.8rem;color:var(--muted);display:block;margin-bottom:2px}
+select{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font:inherit}
+h2{margin:40px 0 12px;font-size:1.1rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.grid{display:grid;gap:14px}
+.card{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.card img{border-radius:22px;flex:none}
+.card h3{margin:0 0 2px;font-size:1.15rem}
+.card p{margin:0 0 6px;color:var(--muted)}
+a{color:var(--accent)}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:480px){.card img{width:72px;height:72px}}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div><h1>Mauricio Javier Biott</h1><p class="tag" data-t="tagline">Small, calm apps for Android.</p></div>
+    <div><label for="lang" data-t="language">Language</label><select id="lang"><option value="en">English</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="tr">Türkçe</option><option value="hi">हिन्दी</option></select></div>
+  </header>
+  <section>
+    <h2 data-t="apps">My apps</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="icons/dojomines.png" width="96" height="96" alt="" loading="lazy">
+        <div><h3>Dojo Mines</h3><p data-t="dojomines">Belt-based mines puzzle: no guessing, rank up and become a Grand Master.</p>
+        <a href="dojomines_privacy/" data-t="privacy">Privacy policy</a></div>
+      </article>
+      <article class="card">
+        <img src="icons/dojosudoku.png" width="96" height="96" alt="" loading="lazy">
+        <div><h3>Dojo Sudoku</h3><p data-t="dojosudoku">Belt-based sudoku: rank up, pass grading exams and become a Grand Master.</p>
+        <a href="dojosudoku_privacy/" data-t="privacy">Privacy policy</a></div>
+      </article>
+      <article class="card">
+        <img src="icons/porotos.png" width="96" height="96" alt="" loading="lazy">
+        <div><h3>Porotos</h3><p data-t="porotos">Truco scorekeeper: keep score with beans or matchsticks on a wooden table. 15 or 30 points.</p>
+        <a href="porotos_privacy/" data-t="privacy">Privacy policy</a></div>
+      </article>
+      <article class="card">
+        <img src="icons/lunacycle.png" width="96" height="96" alt="" loading="lazy">
+        <div><h3>LunaCycle</h3><p data-t="lunacycle">Private period &amp; ovulation tracker. No account, data stays on your phone.</p>
+        <a href="lunacycle_privacy/" data-t="privacy">Privacy policy</a></div>
+      </article>
+      <article class="card">
+        <img src="icons/nimbo.png" width="96" height="96" alt="" loading="lazy">
+        <div><h3>Simple Nimbo</h3><p data-t="nimbo">14-day GPS weather forecast, rain radar, alerts and a home-screen widget with clock.</p>
+        <a href="simple_nimbo_privacy/" data-t="privacy">Privacy policy</a></div>
+      </article>
+    </div>
+  </section>
+  <footer>
+    <span>© 2026 Mauricio Javier Biott</span>
+    <span><span data-t="contact">Contact</span>: <a href="mailto:mauro@biott.com.ar">mauro@biott.com.ar</a></span>
+  </footer>
+</main>
+<script>
+const T = {"en": {"tagline": "Small, calm apps for Android.", "apps": "My apps", "privacy": "Privacy policy", "contact": "Contact", "language": "Language", "porotos": "Truco scorekeeper: keep score with beans or matchsticks on a wooden table. 15 or 30 points.", "lunacycle": "Private period & ovulation tracker. No account, data stays on your phone.", "nimbo": "14-day GPS weather forecast, rain radar, alerts and a home-screen widget with clock.", "dojomines": "Belt-based mines puzzle: no guessing, rank up and become a Grand Master.", "dojosudoku": "Belt-based sudoku: rank up, pass grading exams and become a Grand Master."}, "es": {"tagline": "Apps pequeñas y tranquilas para Android.", "apps": "Mis apps", "privacy": "Política de privacidad", "contact": "Contacto", "language": "Idioma", "porotos": "Anotador de truco con porotos o fósforos sobre una mesa de madera. A 15 o 30 puntos.", "lunacycle": "Agenda privada del ciclo y la ovulación. Sin cuenta, datos en tu teléfono.", "nimbo": "Pronóstico del clima a 14 días por GPS, radar de lluvia, alertas y widget con hora.", "dojomines": "Buscaminas con cinturones: sin adivinar, sube de rango y sé Gran Maestro.", "dojosudoku": "Sudoku con cinturones: sube de rango, rinde exámenes y llega a Gran Maestro."}, "pt": {"tagline": "Apps pequenos e tranquilos para Android.", "apps": "Meus apps", "privacy": "Política de privacidade", "contact": "Contato", "language": "Idioma", "porotos": "Marcador de truco com feijões ou palitos de fósforo numa mesa de madeira. 15 ou 30 pontos.", "lunacycle": "Agenda privada do ciclo e da ovulação. Sem conta, dados no seu celular.", "nimbo": "Previsão do tempo de 14 dias por GPS, radar de chuva, alertas e widget com relógio.", "dojomines": "Campo minado com faixas: sem adivinhar, suba de nível e vire Grão-Mestre.", "dojosudoku": "Sudoku com faixas: suba de nível, faça exames e vire Grão-Mestre."}, "fr": {"tagline": "De petites applications sereines pour Android.", "apps": "Mes applications", "privacy": "Politique de confidentialité", "contact": "Contact", "language": "Langue", "porotos": "Marqueur de truco avec des haricots ou des allumettes sur une table en bois. À 15 ou 30 points.", "lunacycle": "Suivi privé des règles et de l’ovulation. Sans compte, données sur votre téléphone.", "nimbo": "Météo à 14 jours par GPS, radar de pluie, alertes et widget avec horloge.", "dojomines": "Démineur à ceintures : sans deviner, progresse et deviens Grand Maître.", "dojosudoku": "Sudoku à ceintures : progresse, passe des examens et deviens Grand Maître."}, "de": {"tagline": "Kleine, ruhige Apps für Android.", "apps": "Meine Apps", "privacy": "Datenschutzerklärung", "contact": "Kontakt", "language": "Sprache", "porotos": "Truco-Punktezähler mit Bohnen oder Streichhölzern auf einem Holztisch. Bis 15 oder 30 Punkte.", "lunacycle": "Privater Perioden- und Eisprung-Kalender. Ohne Konto, Daten bleiben auf deinem Handy.", "nimbo": "14-Tage-Wetter per GPS, Regenradar, Warnungen und ein Widget mit Uhr.", "dojomines": "Minensucher mit Gürteln: ohne Raten aufsteigen und Großmeister werden.", "dojosudoku": "Sudoku mit Gürteln: steige auf, lege Prüfungen ab und werde Großmeister."}, "it": {"tagline": "Piccole app tranquille per Android.", "apps": "Le mie app", "privacy": "Informativa sulla privacy", "contact": "Contatti", "language": "Lingua", "porotos": "Segnapunti per il truco con fagioli o fiammiferi su un tavolo di legno. A 15 o 30 punti.", "lunacycle": "Diario privato di ciclo e ovulazione. Senza account, dati sul tuo telefono.", "nimbo": "Meteo a 14 giorni via GPS, radar della pioggia, avvisi e widget con orologio.", "dojomines": "Campo minato a cinture: senza indovinare, sali di grado e diventa Gran Maestro.", "dojosudoku": "Sudoku a cinture: sali di grado, supera gli esami e diventa Gran Maestro."}, "nl": {"tagline": "Kleine, rustige apps voor Android.", "apps": "Mijn apps", "privacy": "Privacybeleid", "contact": "Contact", "language": "Taal", "porotos": "Scoreteller voor truco met bonen of lucifers op een houten tafel. Tot 15 of 30 punten.", "lunacycle": "Privé cyclus- en ovulatiekalender. Geen account, gegevens blijven op je telefoon.", "nimbo": "14-daagse weersverwachting via GPS, regenradar, waarschuwingen en een widget met klok.", "dojomines": "Mijnenveger met banden: zonder gokken, stijg in rang en word Grootmeester.", "dojosudoku": "Sudoku met banden: stijg in rang, leg examens af en word Grootmeester."}, "pl": {"tagline": "Małe, spokojne aplikacje na Androida.", "apps": "Moje aplikacje", "privacy": "Polityka prywatności", "contact": "Kontakt", "language": "Język", "porotos": "Licznik punktów do truco z fasolkami lub zapałkami na drewnianym stole. Do 15 lub 30 punktów.", "lunacycle": "Prywatny kalendarz cyklu i owulacji. Bez konta, dane zostają w telefonie.", "nimbo": "14-dniowa prognoza pogody z GPS, radar opadów, alerty i widżet z zegarem.", "dojomines": "Saper z pasami: bez zgadywania, awansuj i zostań Wielkim Mistrzem.", "dojosudoku": "Sudoku z pasami: awansuj, zdawaj egzaminy i zostań Wielkim Mistrzem."}, "ja": {"tagline": "Android向けの、小さくて穏やかなアプリ。", "apps": "アプリ", "privacy": "プライバシーポリシー", "contact": "お問い合わせ", "language": "言語", "porotos": "木のテーブルの上で、豆やマッチ棒を使ってトゥルーコの得点を記録。15点または30点制。", "lunacycle": "月経と排卵のプライベート記録アプリ。アカウント不要、データは端末内に保存。", "nimbo": "GPSで14日間の天気予報、雨雲レーダー、警報、時計付きウィジェット。", "dojomines": "帯で昇級するマインスイーパー。運に頼らず昇級し、グランドマスターへ。", "dojosudoku": "帯で昇級する数独。昇級審査に挑み、グランドマスターへ。"}, "ko": {"tagline": "Android를 위한 작고 차분한 앱.", "apps": "앱", "privacy": "개인정보 처리방침", "contact": "문의", "language": "언어", "porotos": "나무 테이블 위에서 콩이나 성냥개비로 트루코 점수를 기록하세요. 15점 또는 30점제.", "lunacycle": "비공개 생리·배란 기록 앱. 계정 없이, 데이터는 휴대폰에만 저장됩니다.", "nimbo": "GPS 기반 14일 날씨 예보, 비 레이더, 알림, 시계 위젯.", "dojomines": "띠로 승급하는 지뢰 찾기: 추측 없이 승급하고 그랜드 마스터가 되세요.", "dojosudoku": "띠로 승급하는 스도쿠: 승급 심사를 통과하고 그랜드 마스터가 되세요."}, "tr": {"tagline": "Android için küçük ve sakin uygulamalar.", "apps": "Uygulamalarım", "privacy": "Gizlilik politikası", "contact": "İletişim", "language": "Dil", "porotos": "Ahşap bir masada fasulye veya kibrit çöpleriyle truco skoru tut. 15 veya 30 puan.", "lunacycle": "Özel adet ve yumurtlama takibi. Hesap yok, veriler telefonunda kalır.", "nimbo": "GPS ile 14 günlük hava durumu, yağmur radarı, uyarılar ve saatli widget.", "dojomines": "Kuşaklı mayın tarlası: tahmin yok, rütbe atla ve Büyük Usta ol.", "dojosudoku": "Kuşaklı sudoku: rütbe atla, sınavlara gir ve Büyük Usta ol."}, "hi": {"tagline": "Android के लिए छोटे और शांत ऐप्स।", "apps": "मेरे ऐप्स", "privacy": "गोपनीयता नीति", "contact": "संपर्क", "language": "भाषा", "porotos": "लकड़ी की मेज़ पर फलियों या माचिस की तीलियों से ट्रूको का स्कोर रखें। 15 या 30 अंक तक।", "lunacycle": "निजी पीरियड और ओव्यूलेशन ट्रैकर। कोई खाता नहीं, डेटा आपके फ़ोन में रहता है।", "nimbo": "GPS से 14 दिन का मौसम पूर्वानुमान, बारिश रडार, अलर्ट और घड़ी वाला विजेट।", "dojomines": "बेल्ट वाला माइनस्वीपर: बिना अंदाज़े के रैंक बढ़ाएँ और ग्रैंड मास्टर बनें।", "dojosudoku": "बेल्ट वाला सुडोकू: रैंक बढ़ाएँ, परीक्षा पास करें और ग्रैंड मास्टर बनें।"}};
+const sel = document.getElementById('lang');
+function setLang(l) {
+  if (!T[l]) l = 'en';
+  document.documentElement.lang = l;
+  sel.value = l;
+  document.querySelectorAll('[data-t]').forEach(e => { e.textContent = T[l][e.dataset.t]; });
+}
+const wanted = new URLSearchParams(location.search).get('lang');
+const prefs = wanted ? [wanted] : (navigator.languages || [navigator.language || 'en']);
+setLang(prefs.map(p => p.slice(0, 2).toLowerCase()).find(p => T[p]) || 'en');
+sel.addEventListener('change', () => setLang(sel.value));
+</script>
+</body>
+</html>
